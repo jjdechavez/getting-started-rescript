@@ -2,6 +2,108 @@
 'use strict';
 
 
-console.log("Hello, World!");
+var newScore = 20;
 
+console.log(newScore);
+
+var c = 7;
+
+var A = {
+  b: 4,
+  c: c
+};
+
+console.log(c);
+
+function add(a, b) {
+  return a + b | 0;
+}
+
+console.log(10 + newScore | 0);
+
+var listOfGreetings = [
+  "Hello",
+  "world",
+  "how are you?"
+];
+
+var payloadResults = [
+  {
+    TAG: /* Ok */0,
+    _0: {
+      data: "ok"
+    }
+  },
+  {
+    TAG: /* Ok */0,
+    _0: {
+      data: "sasuga"
+    }
+  },
+  {
+    TAG: /* Error */1,
+    _0: "Something went wrong"
+  }
+];
+
+var gpa = 2.1 + 10;
+
+console.log(gpa);
+
+var greetings = "hello!";
+
+var score = 10;
+
+var testTypeAnnote = "passed";
+
+var x = 5;
+
+var a = [
+  5,
+  2,
+  1
+];
+
+var b = [
+  5.2,
+  2.1,
+  1.2
+];
+
+var c$1 = [
+  2,
+  3,
+  8
+];
+
+var d = [
+  2.2,
+  31.1,
+  8.2
+];
+
+var buddy = [
+  2,
+  3,
+  4
+];
+
+var age = 10;
+
+exports.greetings = greetings;
+exports.score = score;
+exports.newScore = newScore;
+exports.A = A;
+exports.add = add;
+exports.testTypeAnnote = testTypeAnnote;
+exports.x = x;
+exports.a = a;
+exports.b = b;
+exports.c = c$1;
+exports.d = d;
+exports.buddy = buddy;
+exports.listOfGreetings = listOfGreetings;
+exports.payloadResults = payloadResults;
+exports.age = age;
+exports.gpa = gpa;
 /*  Not a pure module */

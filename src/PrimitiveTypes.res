@@ -27,3 +27,40 @@ let x = Math.random()
 Console.log(x)
 
 // unknown: represent value with contents that are mystery or are not 100% guaranteed
+
+// tuple - immutable
+let ageAndName = (24, "Lil' Rescript")
+Console.log(ageAndName)
+
+// record or object - immutable
+type person = {
+  age: int,
+  name: string,
+  personType?: string,
+}
+
+let me = {
+  age: 4,
+  name: "Doe",
+}
+
+let name = me.name
+let meNextYear = {...me, age: me.age + 1}
+Console.log(meNextYear)
+Console.log(me.personType)
+
+let maybePersonType = Some("Human")
+let human = {...me, personType: ?maybePersonType}
+Console.log(human)
+
+let isRescript = switch me.personType {
+| Some("Rescript") => true
+| _ => false
+}
+Console.log(isRescript)
+
+let personTypeWasSet = switch human {
+| {personType: ?None} => false
+| {personType: ?Some(_)} => true
+}
+Console.log(personTypeWasSet)
